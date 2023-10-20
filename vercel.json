@@ -1,11 +1,11 @@
 {
   "headers": [
     {
-      "source": "/api/(.*)",
+      "source": "/api(/.*)?",
       "headers": [
         {
           "key": "Access-Control-Allow-Credentials",
-          "value": "false"
+          "value": "true"
         },
         {
           "key": "Access-Control-Allow-Origin",
@@ -13,7 +13,7 @@
         },
         {
           "key": "Access-Control-Allow-Methods",
-          "value": "GET,POST"
+          "value": "GET,OPTIONS,PATCH,DELETE,POST,PUT"
         },
         {
           "key": "Access-Control-Allow-Headers",
